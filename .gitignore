@@ -2,3 +2,4 @@ __pycache__
 migrations
 .env
 versions/*
+.mypy_cache
