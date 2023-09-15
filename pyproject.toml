@@ -2,7 +2,7 @@
 name = "app"
 version = "0.1.0"
 description = ""
-authors = ["Andrey Bodryagin <andrey.bodryagin.person@gmail.com>"]
+authors = ["Andrey Bodryagin <andrey.bodryagin@icloud.com>"]
 readme = "README.md"
 packages = [{include = "app"}]
 
