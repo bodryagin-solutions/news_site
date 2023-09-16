@@ -4,16 +4,16 @@ from datetime import date
 
 class BaseUser(BaseModel):
     username: str = Field(max_length=30, min_length=5)
-    password: str = Field(max_length=30, min_length=8)
 
 
 class UserCreate(BaseUser):
+    password: str = Field(max_length=30, min_length=8)
     email: str
     birthdate: date
 
 
 class DeleteUser(BaseUser):
-    pass
+    password: str = Field(max_length=30, min_length=8)
 
 
 

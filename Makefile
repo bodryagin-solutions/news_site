@@ -4,13 +4,13 @@ env:
 	cp .env.example .env
 
 run:
-	poetry run python3 -m app
+	python3 -m poetry run python3 -m app
 
 revision: 
-	cd app/db; poetry run alembic revision --autogenerate
+	cd app/db; python3 -m poetry run alembic revision --autogenerate
 
 upgrade:
-	cd app/db; poetry run alembic upgrade $(args)
+	cd app/db; python3 -m poetry run alembic upgrade $(args)
 
 up:
 	docker compose up -d --remove-orphans
