@@ -19,3 +19,5 @@ def verify_password(plain_password:str, hashed_password: str):
     salt, password = hashed_password.split("@")
     return get_hash(plain_password, salt) == hashed_password
 
+
+# soem _func
