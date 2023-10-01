@@ -20,7 +20,7 @@ api = APIRouter(prefix="/auth", tags=["Auth"])
 async def authenticate_user(username: str, password: str) -> User:
     try:
         user = await get_user(BaseUser(username=username))
-        # user = await get_active_user(credetials=BaseUser(username=username))#
+        # user = await get_active_user(credetials=BaseUser(username=username))# while don't write activate user func
         if not verify_password(password, user.password):
             return False
         return user
